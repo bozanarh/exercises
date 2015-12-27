@@ -23,6 +23,7 @@ public class Exer4 {
 		return i > 0 ? i : -i;
 	}
 	
+    //test
 	public static void test1(){
 		int [] arr = { 11, 15, 96, 37, 34, 66, 51, 55 };
 		Exer4 exer = new Exer4();
@@ -30,7 +31,7 @@ public class Exer4 {
 		for( int i=0; i<ret.length; i++) System.out.printf("%d ", ret[i]);
 		System.out.println();
 	}
-	
+	//for testing only
 	public static void main(String []args){
 		test1();
 	}

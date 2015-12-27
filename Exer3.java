@@ -7,6 +7,7 @@ public class Exer3 {
     	boolean hasZero = false;
         int []out = new int[in.length];
         int total = 1;
+        //cals product of all numbers and notice if there is 0
         for (int i=0; i<in.length; i++){
             if (in[i] == 0 ) {
             	hasZero = true;
@@ -14,6 +15,7 @@ public class Exer3 {
             }
             total = total * in[i];
         }
+        //calc product, take care of zero elems
         for (int i=0; i<in.length; i++){
             if (in[i] != 0){
             	if (hasZero) out[i] = 0;
@@ -23,6 +25,7 @@ public class Exer3 {
         return out;
     }
 
+    //for testing only
     public static void main( String [] args ){
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

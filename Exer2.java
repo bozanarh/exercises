@@ -60,6 +60,7 @@ public class Exer2{
 		System.out.println("sqrt(" + val + ")=" + ret);
 	}
 	
+    //for testing only
 	public static void main(String [] arr) {
 		test(56);
 		test(356);

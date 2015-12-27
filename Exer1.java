@@ -11,12 +11,14 @@ public class Exer1 {
 	public void steps(int n){
 		steps("", n);
 	}
-	
+
+    //test	
 	public static void test1(int n){
 		Exer1 e = new Exer1();
 		e.steps(n);
 
 	}
+    //for testing only
 	public static void main(String [] args) {
 		test1(7);
 	}

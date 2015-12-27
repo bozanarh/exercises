@@ -16,6 +16,17 @@ public class MyList<Item> {
         if (tail == null) tail = n;
     }
 
+    public boolean hasLoop() {
+        if( head == null ) return false;
+
+        Node<Item> curr = head;
+        do {
+            curr = curr.next;            
+        } while(curr != head && curr != null);
+        return curr == null ? false : true;
+    } 
+
+    //for test only
     public String print( int num ) {
     	StringBuilder s = new StringBuilder();
     	Node<Item> curr = head;
@@ -29,22 +40,14 @@ public class MyList<Item> {
     	return s.toString();
     }
     
-    public boolean hasLoop() {
-        if( head == null ) return false;
-
-        Node<Item> curr = head;
-        do {
-            curr = curr.next;            
-        } while(curr != head && curr != null);
-        return curr == null ? false : true;
-    } 
-
+    //for test only
     public void forceLooping(){
         assert( tail != null );
         assert( head != null );
         tail.next = head;
     }
 
+    //test
     public static void test( boolean forceLooping ) {
         MyList<Integer> l = new MyList<Integer>();
         
@@ -57,6 +60,7 @@ public class MyList<Item> {
     }
 
     
+    //for test only
     public static void main(String [] args) {
         System.out.printf("Test1: ");
         test(false);

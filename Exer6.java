@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exer6 {
    
+    //using binary search alg
 	private static boolean numExist(int [] arr, int head, int tail, int elem) {
 		int N = (tail - head) / 2 ;
 		//System.out.println(" N=" + N);
@@ -30,6 +31,7 @@ public class Exer6 {
         return numExist(array, head, tail, elem);
     }
 
+    //for test only
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
 
